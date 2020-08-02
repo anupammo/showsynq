@@ -21,18 +21,41 @@
         }
 
         .carousel-indicators {
-            bottom: -15px;
+            bottom: -60px;
+        }
+
+        /* .bg-color {
+            background-color: #80c3d4;
+        } */
+
+        .body-bg {
+            background: rgb(255, 255, 255);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 1) 85%, rgba(128, 195, 212, 1) 85%);
+        }
+
+        .btn-light:hover {
+            color: #212529;
+            background-color: #80c3d4;
+            border-color: #80c3d4;
+        }
+
+        .btn-light:not(:disabled):not(.disabled).active,
+        .btn-light:not(:disabled):not(.disabled):active,
+        .show>.btn-light.dropdown-toggle {
+            color: #212529;
+            background-color: #80c3d4;
+            border-color: #80c3d4;
         }
     </style>
 
     <title>SHOWSYNQ - Showcase</title>
 </head>
 
-<body>
+<body class="body-bg">
     <header class="py-2"></header>
     <section>
         <div class="container-fluid">
-            <div class="row">
+            <div class="row h-100">
                 <div class="col-12 col-lg-3">
                     <a href="index.html">
                         <img src="showsynq-logo.jpg" class="img-fluid px-3 my-4" alt="Responsive image">
@@ -117,7 +140,7 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h4 class="card-title my-4 text-info">Product/Brand Description</h4>
+                                    <h4 class="card-title my-4 text-info">Product / Brand Description</h4>
                                     <p class="card-text text-info">Details about the product <br>
                                         Consists of olive oil, almond oil, soft cream <br>
                                         Weight <span>300gms</span></p>
@@ -149,7 +172,7 @@
                     </div>
                     <ul class="nav justify-content-center" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link btn btn-light m-2 shadow-sm" id="promotions-tab" data-toggle="tab"
+                            <a class="nav-link active btn btn-light m-2 shadow-sm" id="promotions-tab" data-toggle="tab"
                                 href="#promotions" role="tab" aria-controls="promotions"
                                 aria-selected="true">Promotions</a>
                         </li>
@@ -176,115 +199,109 @@
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
                                         <div class="row">
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735654/pexels-photo-3735654.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2720447/pexels-photo-2720447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2834934/pexels-photo-2834934.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735149/pexels-photo-3735149.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2720447/pexels-photo-2720447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735654/pexels-photo-3735654.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735149/pexels-photo-3735149.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2834934/pexels-photo-2834934.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
                                         <div class="row">
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735654/pexels-photo-3735654.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2720447/pexels-photo-2720447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2834934/pexels-photo-2834934.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735149/pexels-photo-3735149.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2720447/pexels-photo-2720447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735654/pexels-photo-3735654.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735149/pexels-photo-3735149.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2834934/pexels-photo-2834934.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
                                         <div class="row">
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735654/pexels-photo-3735654.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2720447/pexels-photo-2720447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2834934/pexels-photo-2834934.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735149/pexels-photo-3735149.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2720447/pexels-photo-2720447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735654/pexels-photo-3735654.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735149/pexels-photo-3735149.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2834934/pexels-photo-2834934.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
                                         </div>
                                     </div>
@@ -301,115 +318,109 @@
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
                                         <div class="row">
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735654/pexels-photo-3735654.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2720447/pexels-photo-2720447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2834934/pexels-photo-2834934.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735149/pexels-photo-3735149.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2720447/pexels-photo-2720447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735654/pexels-photo-3735654.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735149/pexels-photo-3735149.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2834934/pexels-photo-2834934.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
                                         <div class="row">
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735654/pexels-photo-3735654.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2720447/pexels-photo-2720447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2834934/pexels-photo-2834934.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735149/pexels-photo-3735149.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2720447/pexels-photo-2720447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735654/pexels-photo-3735654.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735149/pexels-photo-3735149.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2834934/pexels-photo-2834934.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
                                         <div class="row">
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735654/pexels-photo-3735654.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2720447/pexels-photo-2720447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2834934/pexels-photo-2834934.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735149/pexels-photo-3735149.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2720447/pexels-photo-2720447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735654/pexels-photo-3735654.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735149/pexels-photo-3735149.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2834934/pexels-photo-2834934.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
                                         </div>
                                     </div>
@@ -426,115 +437,109 @@
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
                                         <div class="row">
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735654/pexels-photo-3735654.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2720447/pexels-photo-2720447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2834934/pexels-photo-2834934.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735149/pexels-photo-3735149.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2720447/pexels-photo-2720447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735654/pexels-photo-3735654.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735149/pexels-photo-3735149.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2834934/pexels-photo-2834934.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
                                         <div class="row">
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735654/pexels-photo-3735654.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2720447/pexels-photo-2720447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2834934/pexels-photo-2834934.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735149/pexels-photo-3735149.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2720447/pexels-photo-2720447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735654/pexels-photo-3735654.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735149/pexels-photo-3735149.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2834934/pexels-photo-2834934.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
                                         <div class="row">
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735654/pexels-photo-3735654.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2720447/pexels-photo-2720447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2834934/pexels-photo-2834934.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735149/pexels-photo-3735149.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2720447/pexels-photo-2720447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735654/pexels-photo-3735654.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735149/pexels-photo-3735149.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2834934/pexels-photo-2834934.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                    class="rounded mx-auto mt-3 mb-5 d-block img-fluid" alt="...">
+                                                    class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
                                             </div>
                                         </div>
                                     </div>
@@ -546,7 +551,7 @@
                 <div class="col-12 col-lg-3">
                     <ul class="nav justify-content-end">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">
+                            <a class="nav-link text-info active" href="#">
                                 <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-gear-fill"
                                     fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd"
@@ -555,7 +560,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link text-info" href="#">
                                 <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-person-fill"
                                     fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd"
@@ -564,14 +569,14 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link h5" href="#">
+                            <a class="nav-link text-info h5" href="#">
                                 <strong>Logout</strong>
                             </a>
                         </li>
                     </ul>
                     <div class="card">
                         <div class="card-body justify-content-center p-2">
-                            <a href="#" class="card-link btn my-1">
+                            <a href="#" class="card-link btn my-1 text-info">
                                 <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-eye"
                                     fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd"
@@ -582,13 +587,13 @@
                             </a>
                             <ul class="nav">
                                 <li class="nav-item">
-                                    <a class="nav-link btn btn-light shadow-none m-1 px-2" href="#">Start Call</a>
+                                    <a class="nav-link active btn btn-light shadow-none m-1 px-2" href="#">Start Call</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link btn btn-light shadow-none m-1 px-2" href="#">Invite</a>
+                                    <a class="nav-link active btn btn-light shadow-none m-1 px-2" href="#">Invite</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link shadow-none m-1" href="#">
+                                    <a class="nav-link shadow-none m-1 text-info" href="#">
                                         <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-earbuds"
                                             fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd"
@@ -608,7 +613,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link shadow-none m-1" href="#">
+                                    <a class="nav-link shadow-none m-1 text-info" href="#">
                                         <svg width="1.5em" height="1.5em" viewBox="0 0 16 16"
                                             class="bi bi-camera-video-fill" fill="currentColor"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -634,6 +639,7 @@
             </div>
         </div>
     </section>
+    <footer class="py-5"></footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
