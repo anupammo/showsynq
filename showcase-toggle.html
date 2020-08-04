@@ -11,44 +11,38 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <style>
-        .carousel-indicators li {
-            width: 12px;
-            height: 12px;
-            margin-right: 5px;
-            margin-left: 5px;
-            background-color: #adb5bd;
-            border-radius: 50%;
-        }
-
         .carousel-indicators {
             bottom: -60px;
         }
-
-        /* .bg-color {
-            background-color: #80c3d4;
-        } */
-
-        /* .body-bg {
-            background: rgb(255, 255, 255);
-            background: linear-gradient(180deg, rgba(255, 255, 255, 1) 85%, rgba(128, 195, 212, 1) 85%);
-        } */
 
         .this-bg {
             background-color: #80c3d4;
         }
 
+        .chat-bg {
+            background-color: #caf0fb;
+        }
+
+        li.chat-bg {
+            border-bottom: solid 1px #17a2b8 !important;
+        }
+
+        li.chat-bg:last-of-type {
+            border-bottom: none !important;
+        }
+
         .btn-light:hover {
             color: #212529;
-            background-color: #80c3d4;
-            border-color: #80c3d4;
+            background-color: #caf0fb;
+            border-color: #caf0fb;
         }
 
         .btn-light:not(:disabled):not(.disabled).active,
         .btn-light:not(:disabled):not(.disabled):active,
         .show>.btn-light.dropdown-toggle {
             color: #212529;
-            background-color: #80c3d4;
-            border-color: #80c3d4;
+            background-color: #caf0fb;
+            border-color: #caf0fb;
         }
 
         #bg-baseband {
@@ -57,9 +51,10 @@
             background-size: contain;
             background-repeat: no-repeat;
         }
-         footer {
-             margin-top: -1px;
-         }
+
+        footer {
+            margin-top: -1px;
+        }
     </style>
 
     <title>SHOWSYNQ - Showcase</title>
@@ -77,7 +72,7 @@
                     <form class="mx-3 mb-5">
                         <div class="form-group">
                             <!-- <label for="">Example select</label> -->
-                            <select class="form-control shadow-none" id="">
+                            <select class="form-control shadow" id="">
                                 <option value="" selected>Curology</option>
                                 <option value="">Option 1</option>
                                 <option value="">Option 2</option>
@@ -87,7 +82,7 @@
                             </select>
                         </div>
                     </form>
-                    <div class="card shadow-sm my-3">
+                    <div class="card shadow my-3">
                         <div class="card-body p-2">
                             <p class="h5 text-center my-5">
                                 <strong>Your Cart</strong>
@@ -146,7 +141,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
-                    <div class="card mt-5 mb-3 shadow-sm">
+                    <div class="card mt-5 mb-3 shadow">
                         <div class="row no-gutters">
                             <div class="col-md-4">
                                 <img src="https://images.pexels.com/photos/3685530/pexels-photo-3685530.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
@@ -171,7 +166,7 @@
                                                 <option>5</option>
                                             </select>
                                         </div>
-                                        <button type="submit" class="btn btn-info shadow-none">
+                                        <button type="submit" class="btn btn-info shadow">
                                             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart3"
                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd"
@@ -223,86 +218,86 @@
                                             <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2720447/pexels-photo-2720447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                                                     class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
-                                                    <p class="text-info">
-                                                        <span class="float-left">
-                                                            <small>RK10996</small>
-                                                        </span>
-                                                        <span class="float-right">
-                                                            <small>$24</small>
-                                                        </span>
-                                                    </p>
+                                                <p class="text-info">
+                                                    <span class="float-left">
+                                                        <small>RK10996</small>
+                                                    </span>
+                                                    <span class="float-right">
+                                                        <small>$24</small>
+                                                    </span>
+                                                </p>
                                             </div>
                                             <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2834934/pexels-photo-2834934.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                                                     class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
-                                                    <p class="text-info">
-                                                        <span class="float-left">
-                                                            <small>RK10995</small>
-                                                        </span>
-                                                        <span class="float-right">
-                                                            <small>$24</small>
-                                                        </span>
-                                                    </p>
+                                                <p class="text-info">
+                                                    <span class="float-left">
+                                                        <small>RK10995</small>
+                                                    </span>
+                                                    <span class="float-right">
+                                                        <small>$24</small>
+                                                    </span>
+                                                </p>
                                             </div>
                                             <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735149/pexels-photo-3735149.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                                                     class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
-                                                    <p class="text-info">
-                                                        <span class="float-left">
-                                                            <small>RK10994</small>
-                                                        </span>
-                                                        <span class="float-right">
-                                                            <small>$24</small>
-                                                        </span>
-                                                    </p>
+                                                <p class="text-info">
+                                                    <span class="float-left">
+                                                        <small>RK10994</small>
+                                                    </span>
+                                                    <span class="float-right">
+                                                        <small>$24</small>
+                                                    </span>
+                                                </p>
                                             </div>
                                             <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2720447/pexels-photo-2720447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                                                     class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
-                                                    <p class="text-info">
-                                                        <span class="float-left">
-                                                            <small>RK10993</small>
-                                                        </span>
-                                                        <span class="float-right">
-                                                            <small>$24</small>
-                                                        </span>
-                                                    </p>
+                                                <p class="text-info">
+                                                    <span class="float-left">
+                                                        <small>RK10993</small>
+                                                    </span>
+                                                    <span class="float-right">
+                                                        <small>$24</small>
+                                                    </span>
+                                                </p>
                                             </div>
                                             <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735654/pexels-photo-3735654.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                                                     class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
-                                                    <p class="text-info">
-                                                        <span class="float-left">
-                                                            <small>RK10992</small>
-                                                        </span>
-                                                        <span class="float-right">
-                                                            <small>$24</small>
-                                                        </span>
-                                                    </p>
+                                                <p class="text-info">
+                                                    <span class="float-left">
+                                                        <small>RK10992</small>
+                                                    </span>
+                                                    <span class="float-right">
+                                                        <small>$24</small>
+                                                    </span>
+                                                </p>
                                             </div>
                                             <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735149/pexels-photo-3735149.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                                                     class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
-                                                    <p class="text-info">
-                                                        <span class="float-left">
-                                                            <small>RK10991</small>
-                                                        </span>
-                                                        <span class="float-right">
-                                                            <small>$24</small>
-                                                        </span>
-                                                    </p>
+                                                <p class="text-info">
+                                                    <span class="float-left">
+                                                        <small>RK10991</small>
+                                                    </span>
+                                                    <span class="float-right">
+                                                        <small>$24</small>
+                                                    </span>
+                                                </p>
                                             </div>
                                             <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2834934/pexels-photo-2834934.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                                                     class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
-                                                    <p class="text-info">
-                                                        <span class="float-left">
-                                                            <small>RK10990</small>
-                                                        </span>
-                                                        <span class="float-right">
-                                                            <small>$24</small>
-                                                        </span>
-                                                    </p>
+                                                <p class="text-info">
+                                                    <span class="float-left">
+                                                        <small>RK10990</small>
+                                                    </span>
+                                                    <span class="float-right">
+                                                        <small>$24</small>
+                                                    </span>
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -311,98 +306,98 @@
                                             <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735654/pexels-photo-3735654.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                                                     class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
-                                                    <p class="text-info">
-                                                        <span class="float-left">
-                                                            <small>RK10989</small>
-                                                        </span>
-                                                        <span class="float-right">
-                                                            <small>$24</small>
-                                                        </span>
-                                                    </p>
+                                                <p class="text-info">
+                                                    <span class="float-left">
+                                                        <small>RK10989</small>
+                                                    </span>
+                                                    <span class="float-right">
+                                                        <small>$24</small>
+                                                    </span>
+                                                </p>
                                             </div>
                                             <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2720447/pexels-photo-2720447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                                                     class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
-                                                    <p class="text-info">
-                                                        <span class="float-left">
-                                                            <small>RK10988</small>
-                                                        </span>
-                                                        <span class="float-right">
-                                                            <small>$24</small>
-                                                        </span>
-                                                    </p>
+                                                <p class="text-info">
+                                                    <span class="float-left">
+                                                        <small>RK10988</small>
+                                                    </span>
+                                                    <span class="float-right">
+                                                        <small>$24</small>
+                                                    </span>
+                                                </p>
                                             </div>
                                             <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2834934/pexels-photo-2834934.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                                                     class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
-                                                    <p class="text-info">
-                                                        <span class="float-left">
-                                                            <small>RK10987</small>
-                                                        </span>
-                                                        <span class="float-right">
-                                                            <small>$24</small>
-                                                        </span>
-                                                    </p>
+                                                <p class="text-info">
+                                                    <span class="float-left">
+                                                        <small>RK10987</small>
+                                                    </span>
+                                                    <span class="float-right">
+                                                        <small>$24</small>
+                                                    </span>
+                                                </p>
                                             </div>
                                             <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735149/pexels-photo-3735149.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                                                     class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
-                                                    <p class="text-info">
-                                                        <span class="float-left">
-                                                            <small>RK10986</small>
-                                                        </span>
-                                                        <span class="float-right">
-                                                            <small>$24</small>
-                                                        </span>
-                                                    </p>
+                                                <p class="text-info">
+                                                    <span class="float-left">
+                                                        <small>RK10986</small>
+                                                    </span>
+                                                    <span class="float-right">
+                                                        <small>$24</small>
+                                                    </span>
+                                                </p>
                                             </div>
                                             <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2720447/pexels-photo-2720447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                                                     class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
-                                                    <p class="text-info">
-                                                        <span class="float-left">
-                                                            <small>RK10985</small>
-                                                        </span>
-                                                        <span class="float-right">
-                                                            <small>$24</small>
-                                                        </span>
-                                                    </p>
+                                                <p class="text-info">
+                                                    <span class="float-left">
+                                                        <small>RK10985</small>
+                                                    </span>
+                                                    <span class="float-right">
+                                                        <small>$24</small>
+                                                    </span>
+                                                </p>
                                             </div>
                                             <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735654/pexels-photo-3735654.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                                                     class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
-                                                    <p class="text-info">
-                                                        <span class="float-left">
-                                                            <small>RK10984</small>
-                                                        </span>
-                                                        <span class="float-right">
-                                                            <small>$24</small>
-                                                        </span>
-                                                    </p>
+                                                <p class="text-info">
+                                                    <span class="float-left">
+                                                        <small>RK10984</small>
+                                                    </span>
+                                                    <span class="float-right">
+                                                        <small>$24</small>
+                                                    </span>
+                                                </p>
                                             </div>
                                             <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735149/pexels-photo-3735149.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                                                     class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
-                                                    <p class="text-info">
-                                                        <span class="float-left">
-                                                            <small>RK10983</small>
-                                                        </span>
-                                                        <span class="float-right">
-                                                            <small>$24</small>
-                                                        </span>
-                                                    </p>
+                                                <p class="text-info">
+                                                    <span class="float-left">
+                                                        <small>RK10983</small>
+                                                    </span>
+                                                    <span class="float-right">
+                                                        <small>$24</small>
+                                                    </span>
+                                                </p>
                                             </div>
                                             <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2834934/pexels-photo-2834934.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                                                     class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
-                                                    <p class="text-info">
-                                                        <span class="float-left">
-                                                            <small>RK10982</small>
-                                                        </span>
-                                                        <span class="float-right">
-                                                            <small>$24</small>
-                                                        </span>
-                                                    </p>
+                                                <p class="text-info">
+                                                    <span class="float-left">
+                                                        <small>RK10982</small>
+                                                    </span>
+                                                    <span class="float-right">
+                                                        <small>$24</small>
+                                                    </span>
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -411,98 +406,98 @@
                                             <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735654/pexels-photo-3735654.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                                                     class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
-                                                    <p class="text-info">
-                                                        <span class="float-left">
-                                                            <small>RK10981</small>
-                                                        </span>
-                                                        <span class="float-right">
-                                                            <small>$24</small>
-                                                        </span>
-                                                    </p>
+                                                <p class="text-info">
+                                                    <span class="float-left">
+                                                        <small>RK10981</small>
+                                                    </span>
+                                                    <span class="float-right">
+                                                        <small>$24</small>
+                                                    </span>
+                                                </p>
                                             </div>
                                             <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2720447/pexels-photo-2720447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                                                     class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
-                                                    <p class="text-info">
-                                                        <span class="float-left">
-                                                            <small>RK10980</small>
-                                                        </span>
-                                                        <span class="float-right">
-                                                            <small>$24</small>
-                                                        </span>
-                                                    </p>
+                                                <p class="text-info">
+                                                    <span class="float-left">
+                                                        <small>RK10980</small>
+                                                    </span>
+                                                    <span class="float-right">
+                                                        <small>$24</small>
+                                                    </span>
+                                                </p>
                                             </div>
                                             <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2834934/pexels-photo-2834934.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                                                     class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
-                                                    <p class="text-info">
-                                                        <span class="float-left">
-                                                            <small>RK10979</small>
-                                                        </span>
-                                                        <span class="float-right">
-                                                            <small>$24</small>
-                                                        </span>
-                                                    </p>
+                                                <p class="text-info">
+                                                    <span class="float-left">
+                                                        <small>RK10979</small>
+                                                    </span>
+                                                    <span class="float-right">
+                                                        <small>$24</small>
+                                                    </span>
+                                                </p>
                                             </div>
                                             <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735149/pexels-photo-3735149.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                                                     class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
-                                                    <p class="text-info">
-                                                        <span class="float-left">
-                                                            <small>RK10978</small>
-                                                        </span>
-                                                        <span class="float-right">
-                                                            <small>$24</small>
-                                                        </span>
-                                                    </p>
+                                                <p class="text-info">
+                                                    <span class="float-left">
+                                                        <small>RK10978</small>
+                                                    </span>
+                                                    <span class="float-right">
+                                                        <small>$24</small>
+                                                    </span>
+                                                </p>
                                             </div>
                                             <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2720447/pexels-photo-2720447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                                                     class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
-                                                    <p class="text-info">
-                                                        <span class="float-left">
-                                                            <small>RK10977</small>
-                                                        </span>
-                                                        <span class="float-right">
-                                                            <small>$24</small>
-                                                        </span>
-                                                    </p>
+                                                <p class="text-info">
+                                                    <span class="float-left">
+                                                        <small>RK10977</small>
+                                                    </span>
+                                                    <span class="float-right">
+                                                        <small>$24</small>
+                                                    </span>
+                                                </p>
                                             </div>
                                             <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735654/pexels-photo-3735654.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                                                     class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
-                                                    <p class="text-info">
-                                                        <span class="float-left">
-                                                            <small>RK10976</small>
-                                                        </span>
-                                                        <span class="float-right">
-                                                            <small>$24</small>
-                                                        </span>
-                                                    </p>
+                                                <p class="text-info">
+                                                    <span class="float-left">
+                                                        <small>RK10976</small>
+                                                    </span>
+                                                    <span class="float-right">
+                                                        <small>$24</small>
+                                                    </span>
+                                                </p>
                                             </div>
                                             <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/3735149/pexels-photo-3735149.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                                                     class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
-                                                    <p class="text-info">
-                                                        <span class="float-left">
-                                                            <small>RK10975</small>
-                                                        </span>
-                                                        <span class="float-right">
-                                                            <small>$24</small>
-                                                        </span>
-                                                    </p>
+                                                <p class="text-info">
+                                                    <span class="float-left">
+                                                        <small>RK10975</small>
+                                                    </span>
+                                                    <span class="float-right">
+                                                        <small>$24</small>
+                                                    </span>
+                                                </p>
                                             </div>
                                             <div class="col-md-3 col-6">
                                                 <img src="https://images.pexels.com/photos/2834934/pexels-photo-2834934.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                                                     class="rounded mx-auto mt-3 mb-2 d-block img-fluid" alt="...">
-                                                    <p class="text-info">
-                                                        <span class="float-left">
-                                                            <small>RK10974</small>
-                                                        </span>
-                                                        <span class="float-right">
-                                                            <small>$24</small>
-                                                        </span>
-                                                    </p>
+                                                <p class="text-info">
+                                                    <span class="float-left">
+                                                        <small>RK10974</small>
+                                                    </span>
+                                                    <span class="float-right">
+                                                        <small>$24</small>
+                                                    </span>
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -831,7 +826,7 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="card">
+                    <div class="card shadow">
                         <div class="card-body justify-content-center p-0">
                             <a class="card-link btn my-1 text-info shadow-none" data-toggle="collapse"
                                 href="#collapseTop" role="button" aria-expanded="true" aria-controls="collapseExample">
@@ -900,13 +895,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card this-bg my-3">
+                    <div class="card chat-bg my-3">
                         <button type="button" class="btn btn-block btn-success shadow-none" data-toggle="collapse"
                             data-target="#collapseMember" aria-expanded="false"
                             aria-controls="collapseMember">Members</button>
                         <div class="collapse" id="collapseMember">
-                            <ul class="list-group list-group-flush this-bg px-3">
-                                <li class="list-group-item d-flex text-info this-bg">
+                            <ul class="list-group list-group-flush chat-bg px-3">
+                                <li class="list-group-item d-flex text-info chat-bg">
                                     <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-person-fill"
                                         fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd"
@@ -921,7 +916,7 @@
                                         </svg>
                                     </span>
                                 </li>
-                                <li class="list-group-item d-flex text-info this-bg">
+                                <li class="list-group-item d-flex text-info chat-bg">
                                     <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-person-fill"
                                         fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd"
@@ -936,7 +931,7 @@
                                         </svg>
                                     </span>
                                 </li>
-                                <li class="list-group-item d-flex text-info this-bg">
+                                <li class="list-group-item d-flex text-info chat-bg">
                                     <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-person-fill"
                                         fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd"
@@ -951,7 +946,7 @@
                                         </svg>
                                     </span>
                                 </li>
-                                <li class="list-group-item d-flex text-info this-bg">
+                                <li class="list-group-item d-flex text-info chat-bg">
                                     <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-person-fill"
                                         fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd"
@@ -966,7 +961,7 @@
                                         </svg>
                                     </span>
                                 </li>
-                                <li class="list-group-item d-flex text-info this-bg">
+                                <li class="list-group-item d-flex text-info chat-bg">
                                     <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-person-fill"
                                         fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd"
@@ -981,7 +976,7 @@
                                         </svg>
                                     </span>
                                 </li>
-                                <li class="list-group-item d-flex text-info this-bg">
+                                <li class="list-group-item d-flex text-info chat-bg">
                                     <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-person-fill"
                                         fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd"
@@ -995,6 +990,10 @@
                                             <circle cx="8" cy="8" r="8" />
                                         </svg>
                                     </span>
+                                </li>
+                                <li class="list-group-item d-flex text-info chat-bg">
+                                    <button type="button" class="btn btn-info shadow px-5 py-1 mx-auto d-block my-4">
+                                        Invite </button>
                                 </li>
                             </ul>
                         </div>
